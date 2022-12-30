@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    height: 50px;
+    z-index: 1;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    Size:24px;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1{
+    position: left;
+}
+
+.header-left{
+    font-size: 72px;
+}
+
+.profile-image1{
+    margin-top: 100px;
+    position: relative;
+    top: 50px;
+}
+
+.profile-image2{
+height: 726px;
+width: 572px;
+left: 89px;
+top: 1353px;
+border-radius: 0px;
+margin-top: 90px;
+
+}
+
+
+
+.animated-heading {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 5;
+    }
+}
+
+.down-arrow {
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 48px;
+}
+
+.about-text h1{
+    font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+}
+
+.about-section {
+   display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-image2{
+padding-left: 2rem;
+width: 450px;
+height: auto;
+
+}
+
+.about-text {
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+    flex-direction: column;
+    }
+}
+
+#services{
+    margin-top: 10rem;
+margin-right: 6rem;
+margin-bottom: 10rem;
+margin-left: 2rem;
+}
+
+#services h1{
+    font-family: 'Inter';
+font-style: normal;
+font-size: 100px;
+height: 160px;
+/* width: 912px; */
+left: 82px;
+/* top: 2251px; */
+border-radius: nullpx;
+color: #000000;
+}
+
+#para{
+    font-size: 1.20rem;
+    font-weight: 300;
+    margin-left: 2rem;
+}
+
+.services-section {
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width:92vw;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding-top:2rem;
+    overflow-x: auto;
+}
+
+
+.service-card {
+    border: 2px solid black;
+    border-radius: 0;
+    display:inline-block;
+    width:30%;
+    height: 300px;
+    margin-right: 3.5rem;
+    padding: 1rem;
+    background-color:white;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition-duration: 0.3s;
+}
+
+.service-card:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#contact {
+    padding: 50px;
+    font-family: "Inter";
+    background-color: #000000;
+   
+}
+
+#contact h1{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+text-align: center;
+color: #FFFFFF;
+}
+
+#contact-form {
+    display: flex;
+    margin: auto;
+    max-width: 768px;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea {
+    margin: 10px 0;
+    display: block;
+
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+
+
+.submitbtn{
+    font-size: 1.4rem;
+    padding: 0.75rem 5rem;
+}
+.submitbtn:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#success-alert {
+    background-color: green;
+    color: white;
+    padding: 40rem 0;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+    flex-direction: column;
+    height: auto;
+    }
+    .navbar-button {
+    display: block;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: block;
+    }
+    .profile-image1{
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+    .profile-image2{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+
